@@ -1,0 +1,13 @@
+from _typeshed import Incomplete
+from igraph.drawing.baseclasses import AbstractEdgeDrawer
+
+__all__ = ['PlotlyEdgeDrawer']
+
+class PlotlyEdgeDrawer(AbstractEdgeDrawer):
+    context: Incomplete
+    palette: Incomplete
+    VisualEdgeBuilder: Incomplete
+    def __init__(self, context, palette) -> None: ...
+    def draw_directed_edge(self, edge, src_vertex, dest_vertex): ...
+    def draw_loop_edge(self, edge, vertex) -> None: ...
+    def draw_undirected_edge(self, edge, src_vertex, dest_vertex): ...

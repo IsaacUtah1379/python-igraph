@@ -1,0 +1,3 @@
+__all__ = ['_rewire']
+
+def _rewire(graph, n=None, allowed_edge_types: str = 'simple', *, mode=None): ...
